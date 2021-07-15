@@ -1,7 +1,8 @@
+import infoCovid from "./info-covid-logo.svg";
+
 function App() {
   return (
     <div className="App">
-      <h1>hello world</h1>
     </div>
   );
 }
