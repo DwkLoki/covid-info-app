@@ -2,6 +2,8 @@
 
 .top-navbar {
     background-color: $headerFooterColor;
+    position: fixed;
+    width: 100%;
 
     .top-navbar-content {
         padding: 15px;

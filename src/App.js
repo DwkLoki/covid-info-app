@@ -6,6 +6,9 @@ function App() {
     <div className="base App">
       <TopNavbar />
       <br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br />
       <Footer />
     </div>
   );
