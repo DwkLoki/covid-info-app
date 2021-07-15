@@ -1,8 +1,9 @@
-import infoCovid from "./info-covid-logo.svg";
+import TopNavbar from "./component/header/TopNavbar";
 
 function App() {
   return (
-    <div className="App">
+    <div className="base App">
+      <TopNavbar />
     </div>
   );
 }

@@ -1,0 +1,62 @@
+@import "../../assets/scss/variables";
+
+.top-navbar {
+    background-color: $headerFooterColor;
+
+    .top-navbar-content {
+        padding: 15px;
+
+        .top-navbar-content-logo {
+            padding-left: 15px;
+            width: 150px;
+        }
+
+        .nav-link {
+            font-size: 18px;
+            font-weight: 700;
+            color: $titleColor !important;
+            padding: 8px 15px !important;
+
+            &:hover {
+                color: $primaryColor !important;
+            }
+        }
+
+        .btn-navbar {
+            border: 2px solid $primaryColor;
+            border-radius: 50px;
+            color: $primaryColor !important;
+
+            &:hover {
+                background-color: $primaryColor;
+                color: white !important;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        color: $primaryColor !important;
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(251, 76, 71, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+        }
+    }
+}
+
+
+// styling for responsive
+@media (max-width: 767px) {
+    .btn-navbar {
+        width: 60% !important;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .btn-navbar {
+        width: 50% !important;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
