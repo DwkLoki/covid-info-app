@@ -1,0 +1,38 @@
+@import "../../assets/scss/variables";
+
+.footer {
+    .footer-icon-item {
+        display: flex;
+        justify-content: center;
+        color: $titleColor;
+        border: 2px solid $titleColor;
+        border-radius: 50%;
+        padding: 10px;
+        margin: 0px 10px;
+
+        &:hover {
+            color: $primaryColor;
+            border: 2px solid $primaryColor;
+        }
+    }
+}
+
+
+// styling for responsive
+@media (max-width: 320px) {
+    .footer-text {
+        width: 230px;
+        margin: 0 auto !important;
+    }
+
+    .footer-icon-item {
+        margin: 5px !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 575px) {
+    .footer-text {
+        width: 230px;
+        margin: 0 auto !important;
+    }
+}
