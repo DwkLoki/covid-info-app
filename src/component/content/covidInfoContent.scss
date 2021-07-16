@@ -1,0 +1,57 @@
+@import "../../assets/scss/variables";
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap');
+
+.covid-info-content {
+    .home-section {
+        .home-section-left {
+            padding: 0px;
+
+            .home-section-left-first-line {
+                font-size: 30px;
+                color: $primaryColor;
+                margin-bottom: 10px;
+                font-weight: 700;
+            }
+            .home-section-left-main {
+                font-size: 55px;
+                color: $titleColor;
+                letter-spacing: 1px;
+                word-spacing: 5px;
+                font-family: 'Archivo', sans-serif;
+            }
+            .home-section-left-last-line {
+                font-size: 18px;
+                margin: 16px 0px;
+            }
+        }
+
+        .home-section-right {
+            padding: 0px;
+
+            .home-section-img {
+                width: 100%;
+            }
+        }
+
+        .still-home-section {
+            .still-home-section-left {
+                .still-home-img {
+                    width: 100%;
+                }
+            }
+            .still-home-section-right {
+                .covid-article {
+                    width: 650px;
+                    line-height: 30px;
+
+                    .covid-article-header {
+                        margin: 20px 0px;
+                        font-size: 35px;
+                        font-weight: 700;
+                        color: $titleColor;
+                    }
+                }
+            }
+        }
+    }
+}

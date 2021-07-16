@@ -10,7 +10,7 @@ const TopNavbar = () => {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <div className='top-navbar'>
+        <div className='top-navbar sticky-top'>
             <Navbar className="top-navbar-content container" light expand="lg">
                 <NavbarBrand href="/">
                     <img src={infoCovidIcon} alt="Icon" />
