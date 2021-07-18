@@ -113,4 +113,31 @@
             }
         }
     }
+
+    // styling pencegahan section
+    .pencegahan-section {
+        .pencegahan-section-content {
+            .pencegahan-section-item {
+                .pencegahan-section-item-header {
+                    .pencegahan-section-item-header-number {
+                        width: 45px;
+                        height: auto;
+                    }
+                    .pencegahan-section-item-header-title {
+                        width: 100%;
+                        padding-left: 35px;
+                    }
+                }
+                .pencegahan-section-item-content {
+                    padding-left: 82px;
+                }
+            }
+            .pencegahan-section-img {
+                .pencegahan-section-img-item {
+                    width: 70%;
+                    height: auto;
+                }
+            }
+        }
+    }
 }

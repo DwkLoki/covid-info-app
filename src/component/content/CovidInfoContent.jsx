@@ -4,12 +4,20 @@ import penularanPertamaImg from "../../assets/img/batuk.svg";
 import penularanKeduaImg from "../../assets/img/bersentuhan.svg";
 import penularanKetigaImg from "../../assets/img/objek.svg";
 import gejalaCovidImg from "../../assets/img/gejala-covid.svg";
+import one from "../../assets/img/one.svg";
+import two from "../../assets/img/two.svg";
+import three from "../../assets/img/three.svg";
+import four from "../../assets/img/four.svg";
+import pakaiMasker from "../../assets/img/pake-masker.svg";
+import cuciTangan from "../../assets/img/cuci-tangan.svg";
+import gunakanLap from "../../assets/img/gunakan-lap.svg";
+import jagaJarak from "../../assets/img/jaga-jarak.svg";
 import "./covidInfoContent.scss";
 
 const CovidInfoContent = () => {
     return (
         <div className='covid-info-content'>
-            <div className="home-section container-fluid py-5">
+            <div className="home-section container-fluid pt-5">
                 <div className="row">
                     <div className="home-section-left col-6 d-flex justify-content-center align-items-center">
                         <div className="home-section-left-content">
@@ -104,6 +112,94 @@ const CovidInfoContent = () => {
                 </div> 
                 <div className="gejala-content text-center">
                     <img className="gejala-content-img" src={gejalaCovidImg} alt="gejala covid" />
+                </div>
+            </div>
+
+            <div className="pencegahan-section container py-5">
+                <div className="covid-article-third text-center mb-5">
+                    <div className="covid-article-header-third">Pencegahan</div>
+                    <div className="covid-article-content-third">
+                        Corona viruses are a type of virus. There are many different kinds, and some cause disease. 
+                        A newly identified type
+                    </div>
+                </div> 
+                <div className="pencegahan-section-content">
+                    <div className="row py-5">
+                        <div className="pencegahan-section-item d-flex justify-content-center align-items-center col-6">
+                            <div className="covid-article-secondary ">
+                                <div className="pencegahan-section-item-header d-flex vertical-align-middle">
+                                    <img className="pencegahan-section-item-header-number" src={one} alt="first step" /> 
+                                    <span className='covid-article-header-secondary pencegahan-section-item-header-title'>Menggunakan Masker</span>
+                                </div>
+                                <p className='covid-article-content-secondary pencegahan-section-item-content'>
+                                    Continually seize impactful vortals rather than future-proof supply chains. 
+                                    Uniquely exploit emerging niches via fully tested meta-services. 
+                                    Competently pursue standards compliant leadership skills vis-a-vis 
+                                    pandemic "outside the box" thinking. Objectively 
+                                </p>
+                            </div>
+                        </div>
+                        <div className="pencegahan-section-img text-center col-6">
+                            <img className="pencegahan-section-img-item" src={pakaiMasker} alt="pakai masker icon" />
+                        </div>
+                    </div>
+                    <div className="row py-5">
+                        <div className="pencegahan-section-img text-center col-6">
+                            <img className="pencegahan-section-img-item" src={pakaiMasker} alt="pakai masker icon" />
+                        </div>
+                        <div className="pencegahan-section-item d-flex justify-content-center align-items-center col-6">
+                            <div className="covid-article-secondary ">
+                                <div className="pencegahan-section-item-header d-flex vertical-align-middle">
+                                    <img className="pencegahan-section-item-header-number" src={two} alt="second step" /> 
+                                    <span className='covid-article-header-secondary pencegahan-section-item-header-title'>Menggunakan Masker</span>
+                                </div>
+                                <p className='covid-article-content-secondary pencegahan-section-item-content'>
+                                    Continually seize impactful vortals rather than future-proof supply chains. 
+                                    Uniquely exploit emerging niches via fully tested meta-services. 
+                                    Competently pursue standards compliant leadership skills vis-a-vis 
+                                    pandemic "outside the box" thinking. Objectively 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row py-5">
+                        <div className="pencegahan-section-item d-flex justify-content-center align-items-center col-6">
+                            <div className="covid-article-secondary ">
+                                <div className="pencegahan-section-item-header d-flex vertical-align-middle">
+                                    <img className="pencegahan-section-item-header-number" src={three} alt="third step" /> 
+                                    <span className='covid-article-header-secondary pencegahan-section-item-header-title'>Menggunakan Masker</span>
+                                </div>
+                                <p className='covid-article-content-secondary pencegahan-section-item-content'>
+                                    Continually seize impactful vortals rather than future-proof supply chains. 
+                                    Uniquely exploit emerging niches via fully tested meta-services. 
+                                    Competently pursue standards compliant leadership skills vis-a-vis 
+                                    pandemic "outside the box" thinking. Objectively 
+                                </p>
+                            </div>
+                        </div>
+                        <div className="pencegahan-section-img text-center col-6">
+                            <img className="pencegahan-section-img-item" src={pakaiMasker} alt="pakai masker icon" />
+                        </div>
+                    </div>
+                    <div className="row py-5">
+                        <div className="pencegahan-section-img text-center col-6">
+                            <img className="pencegahan-section-img-item" src={pakaiMasker} alt="pakai masker icon" />
+                        </div>
+                        <div className="pencegahan-section-item d-flex justify-content-center align-items-center col-6">
+                            <div className="covid-article-secondary ">
+                                <div className="pencegahan-section-item-header d-flex vertical-align-middle">
+                                    <img className="pencegahan-section-item-header-number" src={four} alt="fourth step" /> 
+                                    <span className='covid-article-header-secondary pencegahan-section-item-header-title'>Menggunakan Masker</span>
+                                </div>
+                                <p className='covid-article-content-secondary pencegahan-section-item-content'>
+                                    Continually seize impactful vortals rather than future-proof supply chains. 
+                                    Uniquely exploit emerging niches via fully tested meta-services. 
+                                    Competently pursue standards compliant leadership skills vis-a-vis 
+                                    pandemic "outside the box" thinking. Objectively 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

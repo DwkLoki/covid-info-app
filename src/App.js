@@ -7,7 +7,6 @@ function App() {
     <div className="base App">
       <TopNavbar />
       <CovidInfoContent />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br />
       <Footer />
     </div>
   );
