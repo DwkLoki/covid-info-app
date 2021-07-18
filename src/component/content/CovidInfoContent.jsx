@@ -1,5 +1,9 @@
 import stayHomeImg from "../../assets/img/stay-at-home.svg";
 import aboutUsImg from "../../assets/img/about-corona.svg";
+import penularanPertamaImg from "../../assets/img/batuk.svg";
+import penularanKeduaImg from "../../assets/img/bersentuhan.svg";
+import penularanKetigaImg from "../../assets/img/objek.svg";
+import gejalaCovidImg from "../../assets/img/gejala-covid.svg";
 import "./covidInfoContent.scss";
 
 const CovidInfoContent = () => {
@@ -45,6 +49,61 @@ const CovidInfoContent = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div className="penularan-section container py-5">
+                <div className="covid-article-third text-center mb-5">
+                    <div className="covid-article-header-third">Penularan</div>
+                    <div className="covid-article-content-third">
+                        Corona viruses are a type of virus. There are many different kinds, and some cause disease. 
+                        A newly identified type
+                    </div>
+                </div> 
+                <div className="penularan-content row text-center d-flex justify-content-center">
+                    <div className="penularan-content-card px-4 py-5 col-3">
+                        <img className="penularan-content-img" src={penularanPertamaImg} alt="penularan 1" />
+                        <div className="covid-article-secondary">
+                            <div className="covid-article-header-secondary">Penularan</div>
+                            <div className="covid-article-content-secondary">
+                                Corona viruses are a type of virus. There are many different kinds, and some cause disease. 
+                                A newly identified type
+                            </div>
+                        </div> 
+                    </div>
+                    <div className="penularan-content-card px-4 py-5 col-3">
+                        <img className="penularan-content-img" src={penularanKeduaImg} alt="penularan 2" />
+                        <div className="covid-article-secondary">
+                            <div className="covid-article-header-secondary">Penularan</div>
+                            <div className="covid-article-content-secondary">
+                                Corona viruses are a type of virus. There are many different kinds, and some cause disease. 
+                                A newly identified type
+                            </div>
+                        </div> 
+                    </div>
+                    <div className="penularan-content-card px-4 py-5 col-3">
+                        <img className="penularan-content-img" src={penularanKetigaImg} alt="penularan 2" />
+                        <div className="covid-article-secondary">
+                            <div className="covid-article-header-secondary">Penularan</div>
+                            <div className="covid-article-content-secondary">
+                                Corona viruses are a type of virus. There are many different kinds, and some cause disease. 
+                                A newly identified type
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div className="gejala-section container py-5">
+                <div className="covid-article-third text-center mb-5">
+                    <div className="covid-article-header-third">Gejala</div>
+                    <div className="covid-article-content-third">
+                        Corona viruses are a type of virus. There are many different kinds, and some cause disease. 
+                        A newly identified type
+                    </div>
+                </div> 
+                <div className="gejala-content text-center">
+                    <img className="gejala-content-img" src={gejalaCovidImg} alt="gejala covid" />
                 </div>
             </div>
         </div>

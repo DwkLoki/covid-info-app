@@ -2,6 +2,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap');
 
 .covid-info-content {
+    .covid-article {
+        width: 650px;
+        line-height: 30px;
+
+        .covid-article-header {
+            margin: 20px 0px;
+            font-size: 35px;
+            font-weight: 700;
+            color: $titleColor;
+        }
+    }
+
+    .covid-article-secondary {
+        // width: 650px;
+        line-height: 30px;
+
+        .covid-article-header-secondary {
+            margin: 20px 0px;
+            font-size: 30px;
+            font-weight: 700;
+            color: $titleColor;
+        }
+        .covid-article-content-secondary {
+            font-size: 14px;
+        }
+    }
+
+    .covid-article-third {
+        width: 650px;
+        line-height: 30px;
+        margin: 0 auto;
+
+        .covid-article-header-third {
+            margin: 20px 0px;
+            font-size: 35px;
+            font-weight: 700;
+            color: $titleColor;
+        }
+    }
+
+    // styling home section
     .home-section {
         .home-section-left {
             padding: 0px;
@@ -39,18 +80,36 @@
                     width: 100%;
                 }
             }
-            .still-home-section-right {
-                .covid-article {
-                    width: 650px;
-                    line-height: 30px;
+        }
+    }
 
-                    .covid-article-header {
-                        margin: 20px 0px;
-                        font-size: 35px;
-                        font-weight: 700;
-                        color: $titleColor;
-                    }
-                }
+    // styling penularan section
+    .penularan-content {
+        padding-top: 40px;
+
+        .penularan-content-card {
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15),
+            inset 0px 2px 2px rgba(0, 0, 0, 0.15);
+            background-color: $cardColor;
+            border-radius: 10px;
+            margin: 0px 35px;
+
+            .penularan-content-img {
+                width: 80%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    // styling gejala section
+    .gejala-section {
+        .gejala-content {
+            padding: 0px 50px;
+
+            .gejala-content-img {
+                width: 70%;
+                height: auto;
             }
         }
     }
