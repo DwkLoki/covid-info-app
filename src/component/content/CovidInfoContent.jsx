@@ -13,11 +13,32 @@ import cuciTangan from "../../assets/img/cuci-tangan.svg";
 import gunakanLap from "../../assets/img/gunakan-lap.svg";
 import jagaJarak from "../../assets/img/jaga-jarak.svg";
 import "./covidInfoContent.scss";
+import DataCovid from "./DataCovid";
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const CovidInfoContent = () => {
+    const [ dataCovid, setDataCovid ] = useState(null);
+
+    useEffect(() => {
+        getDataCovid()
+    }, [])
+
+    const getDataCovid = async () => {
+        const url = `https://apicovid19indonesia-v2.vercel.app/api/indonesia/more`
+
+        try {
+            const response = await axios.get(url)
+            setDataCovid( response.data )
+            // console.log(response.data);
+        } catch (err) {
+            console.log(err);
+        }
+    }
+
     return (
         <div className='covid-info-content'>
-            <div className="home-section container-fluid pt-5">
+            <div className="home-section container-fluid pt-5" id='home'>
                 <div className="row">
                     <div className="home-section-left col-6 d-flex justify-content-center align-items-center">
                         <div className="home-section-left-content">
@@ -58,9 +79,29 @@ const CovidInfoContent = () => {
                         </div>
                     </div>
                 </div>
+                <div className="covid-info-data container pt-5">
+                    <div className='covid-info-data-header'>
+                        <h1 className='covid-info-data-title'>Jumlah Kasus Covid-19 di Indonesia Saat Ini</h1>
+                        <h6 className='covid-info-data-tgl'>Tanggal : {dataCovid && dataCovid.penambahan.tanggal}</h6>
+                    </div>
+                    <div className="row">
+                        <div className="col-3">
+                            <DataCovid />
+                        </div>
+                        <div className="col-3">
+                            <DataCovid />
+                        </div>
+                        <div className="col-3">
+                            <DataCovid />
+                        </div>
+                        <div className="col-3">
+                            <DataCovid />
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div className="penularan-section container py-5">
+            <div className="penularan-section container py-5" id='penularan'>
                 <div className="covid-article-third text-center mb-5">
                     <div className="covid-article-header-third">Penularan</div>
                     <div className="covid-article-content-third">
@@ -102,7 +143,7 @@ const CovidInfoContent = () => {
                 </div>
             </div>
 
-            <div className="gejala-section container py-5">
+            <div className="gejala-section container py-5" id='gejala'>
                 <div className="covid-article-third text-center mb-5">
                     <div className="covid-article-header-third">Gejala</div>
                     <div className="covid-article-content-third">
@@ -115,7 +156,7 @@ const CovidInfoContent = () => {
                 </div>
             </div>
 
-            <div className="pencegahan-section container py-5">
+            <div className="pencegahan-section container py-5" id='pencegahan'>
                 <div className="covid-article-third text-center mb-5">
                     <div className="covid-article-header-third">Pencegahan</div>
                     <div className="covid-article-content-third">
@@ -145,7 +186,7 @@ const CovidInfoContent = () => {
                     </div>
                     <div className="row py-5">
                         <div className="pencegahan-section-img text-center col-6">
-                            <img className="pencegahan-section-img-item" src={pakaiMasker} alt="pakai masker icon" />
+                            <img className="pencegahan-section-img-item" src={cuciTangan} alt="cuci tangan icon" />
                         </div>
                         <div className="pencegahan-section-item d-flex justify-content-center align-items-center col-6">
                             <div className="covid-article-secondary ">
@@ -178,12 +219,12 @@ const CovidInfoContent = () => {
                             </div>
                         </div>
                         <div className="pencegahan-section-img text-center col-6">
-                            <img className="pencegahan-section-img-item" src={pakaiMasker} alt="pakai masker icon" />
+                            <img className="pencegahan-section-img-item" src={gunakanLap} alt="gunakan lap icon" />
                         </div>
                     </div>
                     <div className="row py-5">
                         <div className="pencegahan-section-img text-center col-6">
-                            <img className="pencegahan-section-img-item" src={pakaiMasker} alt="pakai masker icon" />
+                            <img className="pencegahan-section-img-item" src={jagaJarak} alt="pakai masker icon" />
                         </div>
                         <div className="pencegahan-section-item d-flex justify-content-center align-items-center col-6">
                             <div className="covid-article-secondary ">

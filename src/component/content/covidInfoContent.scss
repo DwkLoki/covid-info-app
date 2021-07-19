@@ -81,6 +81,22 @@
                 }
             }
         }
+
+        .covid-info-data {
+            padding-bottom: 70px;
+            
+            .covid-info-data-header {
+                margin-bottom: 30px;
+
+                .covid-info-data-title {
+                    font-weight: 700;
+                }
+
+                .covid-info-data-tgl {
+                    font-weight: 700;
+                }
+            }
+        }
     }
 
     // styling penularan section

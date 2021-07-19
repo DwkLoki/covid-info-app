@@ -1,0 +1,32 @@
+@import "../../assets/scss/variables";
+
+.data-covid {
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: auto;
+    background: linear-gradient(180deg, rgba(82, 0, 106, 1) 0%, rgba(165, 122, 178, 1) 100%);
+
+    &:hover {
+        // background: linear-gradient(180deg, rgba(165, 122, 178, 1) 0%, rgba(82, 0, 106, 1) 100%);
+        background: $primaryColor;
+    }
+
+    .data-covid-info {
+        // width: 100%;
+        // height: auto;
+
+        .data-covid-desc {
+            font-weight: 700;
+            color: white;
+        }
+
+        .data-covid-number {
+            font-size: 50px;
+            font-weight: 700;
+        }
+    }
+}

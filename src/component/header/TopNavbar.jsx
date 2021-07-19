@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { NavLink as RRNavLink } from 'react-router-dom';
 import infoCovidLogo from "../../assets/img/info-covid-logo-purp.svg";
 import infoCovidIcon from "../../assets/img/info-covid-icon.svg";
 import "./topNavbar.scss";
@@ -21,19 +22,19 @@ const TopNavbar = () => {
                     <Nav navbar />
                     <Nav navbar>
                         <NavItem>
-                            <NavLink href="#">Home</NavLink>
+                            <NavLink to="/" className='top-navbar-nav' tag={RRNavLink}>Home</NavLink>
+                        </NavItem> 
+                        <NavItem>
+                            <NavLink href="#penularan" className='top-navbar-nav'>Penularan</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#">Penularan</NavLink>
+                            <NavLink href="#gejala" className='top-navbar-nav'>Gejala</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#">Gejala</NavLink>
+                            <NavLink href="#pencegahan" className='top-navbar-nav'>Pencegahan</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#">Pencegahan</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="#" className="btn-navbar">Cek Provinsimu !</NavLink>
+                            <NavLink to="/provinsi" className="btn-navbar top-navbar-nav" tag={RRNavLink}>Cek Provinsimu !</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>
