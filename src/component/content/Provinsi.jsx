@@ -50,7 +50,7 @@ const Provinsi = () => {
                     <h6 className='data-provinsi-tgl'>Tanggal : {dataCovidProvinsi && dataCovidProvinsi.last_date}</h6>
                 </div>
                 <div className="row">
-                    <div className="col-3">
+                    <div className="col-lg-3 col-12">
                         { dataCovidProvinsi && 
                             <div style={{ color: 'DodgerBlue' }}>
                                 <DataCovid 
@@ -60,7 +60,7 @@ const Provinsi = () => {
                             </div>
                         }
                     </div>
-                    <div className="col-3">
+                    <div className="col-lg-3 col-12">
                         { dataCovidProvinsi && 
                             <div style={{ color: 'red' }}>
                                 <DataCovid 
@@ -70,7 +70,7 @@ const Provinsi = () => {
                             </div>
                         }
                     </div>
-                    <div className="col-3">
+                    <div className="col-lg-3 col-12">
                         { dataCovidProvinsi && 
                             <div style={{ color: 'green' }}>
                                 <DataCovid 
@@ -80,7 +80,7 @@ const Provinsi = () => {
                             </div>
                         }
                     </div>
-                    <div className="col-3">
+                    <div className="col-lg-3 col-12">
                         { dataCovidProvinsi && 
                             <div style={{ color: 'orange' }}>
                                 <DataCovid 

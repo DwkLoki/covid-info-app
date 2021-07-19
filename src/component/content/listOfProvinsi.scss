@@ -37,3 +37,25 @@
     color: $titleColor;
     font-size: 35px;
 }
+
+// styling for responsive
+
+@media (max-width: 575px) {
+    .choose-list {
+        font-size: 25px;
+        padding: 0px 15px;
+    }
+
+    .list-provinsi {
+        padding: 0px 20px;
+        .list-provinsi-item {
+            width: 50%;
+
+            .list-provinsi-item-name {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

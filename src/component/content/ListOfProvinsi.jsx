@@ -34,7 +34,7 @@ const ListOfProvinsi = () => {
 
     return (
         <div>
-            <div className="container pt-5">
+            <div className="container pt-lg-5 pt-3">
                 <h1 className='choose-list'>Silahkan pilih provinsi di bawah :</h1>
                 <div className="row list-provinsi">
                         {dataCovidProvinsi &&
@@ -47,7 +47,7 @@ const ListOfProvinsi = () => {
                 </div>
             </div>
 
-            <hr className='my-5'/>
+            <hr className='my-lg-5 my-3'/>
 
             <Route exact path={`${match.path}/:namaProvinsi`}>
                 <Provinsi />

@@ -13,3 +13,23 @@
         }
     }
 }
+
+// styling for responsive 
+@media (max-width: 575px) {
+    .data-provinsi {
+        padding: 8px 24px 50px !important;
+
+        .data-provinsi-header {
+            margin-bottom: 10px;
+
+            .data-provinsi-title {
+                font-size: 25px;
+                text-align: justify;
+            }
+
+            .data-provinsi-tgl {
+                text-align: right;
+            }
+        }
+    }
+}
