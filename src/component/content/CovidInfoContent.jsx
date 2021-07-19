@@ -86,16 +86,44 @@ const CovidInfoContent = () => {
                     </div>
                     <div className="row">
                         <div className="col-3">
-                            <DataCovid />
+                            { dataCovid && 
+                                <div style={{ color: 'DodgerBlue' }}>
+                                    <DataCovid 
+                                        dataCovidApp={dataCovid.total.positif} 
+                                        keterangan="Positif"
+                                    />
+                                </div>
+                            }
                         </div>
                         <div className="col-3">
-                            <DataCovid />
+                            { dataCovid && 
+                                <div style={{ color: 'red' }}>
+                                    <DataCovid 
+                                        dataCovidApp={dataCovid.total.meninggal} 
+                                        keterangan="Meninggal"
+                                    />
+                                </div>
+                            }
                         </div>
                         <div className="col-3">
-                            <DataCovid />
+                            { dataCovid && 
+                                <div style={{ color: 'green' }}>
+                                    <DataCovid 
+                                        dataCovidApp={dataCovid.total.sembuh} 
+                                        keterangan="Sembuh"
+                                    />
+                                </div>
+                            }
                         </div>
                         <div className="col-3">
-                            <DataCovid />
+                            { dataCovid && 
+                                <div style={{ color: 'orange' }}>
+                                    <DataCovid 
+                                        dataCovidApp={dataCovid.total.dirawat} 
+                                        keterangan="Dirawat"
+                                    />
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>
