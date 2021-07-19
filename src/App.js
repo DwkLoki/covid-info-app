@@ -15,9 +15,6 @@ function App() {
         <Route path='/provinsi'>
             <ListOfProvinsi />
         </Route>
-        {/* <Route exact path={`${match.path}/:namaProvinsi`}>
-            <Provinsi />
-        </Route> */}
       </Switch>
       <Footer />
     </div>

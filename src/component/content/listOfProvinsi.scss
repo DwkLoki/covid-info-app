@@ -1,0 +1,33 @@
+@import "../../assets/scss/variables";
+
+// // // styling for list provinsi // // //
+.list-provinsi {
+    list-style-type: none;
+    // display: flex;
+    // justify-content: center;
+
+    .list-provinsi-item {
+        padding: 0px;
+        margin: 10px 0px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 25%;
+        justify-content: center;
+
+        .list-provinsi-item-name {
+            width: 95%;
+            text-decoration: none;
+            color: $titleColor;
+            font-weight: 700;
+            border: 2px solid $titleColor;
+            padding: 10px;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: $titleColor;
+                color: white;
+            }
+        }
+    }
+}

@@ -2,6 +2,7 @@ import { Link, Route, useRouteMatch } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Provinsi from "./Provinsi";
 import axios from 'axios';
+import "./listOfProvinsi.scss";
 
 const ListOfProvinsi = () => {
     const [dataCovidProvinsi, setDataCovidProvinsi] = useState(null);
@@ -32,18 +33,31 @@ const ListOfProvinsi = () => {
     }
 
     return (
-        <div className="container">
-            <nav>
-                {dataCovidProvinsi &&
-                    dataCovidProvinsi.map((itemKey, i) =>
-                        <ul key={i}>
-                            <li>
-                                <Link to={`${match.url}/${toKebab(itemKey.provinsi)}`}>{itemKey.provinsi}</Link>
-                            </li>
-                        </ul>
-                    )
-                }
-            </nav>
+        <div>
+            {/* {dataCovidProvinsi &&
+                dataCovidProvinsi.map((itemKey, i) =>
+                    <ul key={i}>   
+                        <li className="list-provinsi">
+                            <Link className="list-provinsi-item" to={`${match.url}/${toKebab(itemKey.provinsi)}`}>{itemKey.provinsi}</Link>
+                        </li>
+                    </ul>
+                )
+            } */}
+
+            <div className="container pt-5">
+                <div className="row list-provinsi">
+                        {dataCovidProvinsi &&
+                            dataCovidProvinsi.map((itemKey) =>
+                                <div className="list-provinsi-item">
+                                    <Link className="list-provinsi-item-name" to={`${match.url}/${toKebab(itemKey.provinsi)}`}>{itemKey.provinsi}</Link>
+                                </div>
+                            )
+                        }
+                </div>
+            </div>
+
+            <hr className='my-5'/>
+
             <Route exact path={`${match.path}/:namaProvinsi`}>
                 <Provinsi />
             </Route>
