@@ -34,17 +34,8 @@ const ListOfProvinsi = () => {
 
     return (
         <div>
-            {/* {dataCovidProvinsi &&
-                dataCovidProvinsi.map((itemKey, i) =>
-                    <ul key={i}>   
-                        <li className="list-provinsi">
-                            <Link className="list-provinsi-item" to={`${match.url}/${toKebab(itemKey.provinsi)}`}>{itemKey.provinsi}</Link>
-                        </li>
-                    </ul>
-                )
-            } */}
-
             <div className="container pt-5">
+                <h1 className='choose-list'>Silahkan pilih provinsi di bawah :</h1>
                 <div className="row list-provinsi">
                         {dataCovidProvinsi &&
                             dataCovidProvinsi.map((itemKey) =>

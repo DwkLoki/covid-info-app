@@ -25,15 +25,6 @@ const TopNavbar = () => {
                             <NavLink to="/" className='top-navbar-nav' tag={RRNavLink}>Home</NavLink>
                         </NavItem> 
                         <NavItem>
-                            <NavLink href="#penularan" className='top-navbar-nav'>Penularan</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="#gejala" className='top-navbar-nav'>Gejala</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="#pencegahan" className='top-navbar-nav'>Pencegahan</NavLink>
-                        </NavItem>
-                        <NavItem>
                             <NavLink to="/provinsi" className="btn-navbar top-navbar-nav" tag={RRNavLink}>Cek Provinsimu !</NavLink>
                         </NavItem>
                     </Nav>

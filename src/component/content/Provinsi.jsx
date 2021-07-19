@@ -2,7 +2,7 @@ import DataCovid from './DataCovid';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import "./covidInfoContent.scss";
+import "./provinsi.scss";
 
 const Provinsi = () => {
     const [dataCovidProvinsi, setDataCovidProvinsi] = useState(null);
@@ -44,10 +44,10 @@ const Provinsi = () => {
 
     return (
         <div>
-            <div className='covid-info-data container'>
-                <div className='covid-info-data-header'>
-                    <h1 className='covid-info-data-title'>{`Jumlah Kasus Covid-19 di ${toTitle(params.namaProvinsi)} Saat Ini`}</h1>
-                    <h6>Tanggal : {dataCovidProvinsi && dataCovidProvinsi.last_date}</h6>
+            <div className='data-provinsi container'>
+                <div className='data-provinsi-header'>
+                    <h1 className='data-provinsi-title'>{`Jumlah Kasus Covid-19 di ${toTitle(params.namaProvinsi)} Saat Ini`}</h1>
+                    <h6 className='data-provinsi-tgl'>Tanggal : {dataCovidProvinsi && dataCovidProvinsi.last_date}</h6>
                 </div>
                 <div className="row">
                     <div className="col-3">
