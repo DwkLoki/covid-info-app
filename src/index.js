@@ -7,10 +7,10 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
-  <React.Fragment>
+  <React.StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </React.Fragment>,
+  </React.StrictMode>,
   document.getElementById('root')
 );
