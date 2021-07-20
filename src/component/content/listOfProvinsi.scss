@@ -59,3 +59,49 @@
         }
     }
 }
+
+
+// styling for responsive under tablet
+@media (min-width: 576px) and (max-width: 767px) {
+        .choose-list {
+            font-size: 25px;
+            padding: 0px 15px;
+        }
+
+        .list-provinsi {
+            padding: 0px 20px;
+
+            .list-provinsi-item {
+                width: 50%;
+
+                .list-provinsi-item-name {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+}
+
+
+// styling for tablet
+@media (min-width: 768px) and (max-width: 991px) {
+    .choose-list {
+        font-size: 25px;
+        padding: 0px 15px;
+    }
+
+    .list-provinsi {
+        padding: 0px 20px;
+
+        .list-provinsi-item {
+            width: 50%;
+
+            .list-provinsi-item-name {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

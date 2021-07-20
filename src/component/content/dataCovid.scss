@@ -51,3 +51,48 @@
         }
     }
 }
+
+// styling for under tablet
+@media (min-width: 576px) and (max-width: 767px) {
+    .data-covid {
+        padding: 30px;
+        margin: 15px 0px;
+
+        .data-covid-info {
+            width: 90%;
+
+            .data-covid-desc {
+                font-weight: 700;
+                color: white;
+            }
+
+            .data-covid-number {
+                font-size: 50px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+// styling for tablet 
+@media (min-width: 768px) and (max-width: 991px) {
+    .data-covid {
+        padding: 30px;
+        margin: 15px 0px;
+
+        .data-covid-info {
+            width: 90%;
+
+            .data-covid-desc {
+                font-weight: 700;
+                color: white;
+            }
+
+            .data-covid-number {
+                font-size: 50px;
+                font-weight: 700;
+            }
+        }
+    }
+}

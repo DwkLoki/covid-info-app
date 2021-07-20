@@ -38,8 +38,8 @@ const ListOfProvinsi = () => {
                 <h1 className='choose-list'>Silahkan pilih provinsi di bawah :</h1>
                 <div className="row list-provinsi">
                         {dataCovidProvinsi &&
-                            dataCovidProvinsi.map((itemKey) =>
-                                <div className="list-provinsi-item">
+                            dataCovidProvinsi.map((itemKey, i) =>
+                                <div className="list-provinsi-item" key={i}>
                                     <Link className="list-provinsi-item-name" to={`${match.url}/${toKebab(itemKey.provinsi)}`}>{itemKey.provinsi}</Link>
                                 </div>
                             )
